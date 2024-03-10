@@ -166,6 +166,11 @@
   resolved "https://registry.npmjs.org/@types/selenium-webdriver/-/selenium-webdriver-3.0.22.tgz"
   integrity sha512-Nh76NUqvfsZHG5ot5gMlHNNHQvbRvv5UpM4FH3K1HuUGeq4scNlRoKVKSOP/EGIYHhJ2IUXyQc+38jvZLxfB2Q==
 
+"@xmldom/xmldom@^0.7.0", "@xmldom/xmldom@^0.7.6", "@xmldom/xmldom@^0.7.9":
+  version "0.7.13"
+  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.7.13.tgz#ff34942667a4e19a9f4a0996a76814daac364cf3"
+  integrity sha512-lm2GW5PkosIzccsaZIz7tp8cPADSIlIHWDFTR1N0SzfinhhYgeIQjFMz4rYzanCScr3DqQLeomUDArp6MWKm+g==
+
 "@xmldom/xmldom@^0.8.5":
   version "0.8.8"
   resolved "https://registry.npmjs.org/@xmldom/xmldom/-/xmldom-0.8.8.tgz"
@@ -801,7 +806,7 @@ async@^2.0.0, async@^2.0.1, async@^2.1.2, async@^2.5.0, async@^2.6.4, async@~2.6
   dependencies:
     lodash "^4.17.14"
 
-async@~0.2.7, async@~0.2.9:
+async@~0.2.9:
   version "0.2.10"
   resolved "https://registry.npmjs.org/async/-/async-0.2.10.tgz"
   integrity sha512-eAkdoKxU6/LkKDBzLpT+t6Ff5EtfSF4wx1WfJiPEEV7WNLnDaRXk0oVysiEPm262roaachGexwUv94WhSgN5TQ==
@@ -2612,7 +2617,7 @@ debug@3.2.7, debug@^3.1.0, debug@^3.2.7:
   dependencies:
     ms "^2.1.1"
 
-debug@^4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.4, debug@~4.3.1:
+debug@^4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2, debug@^4.3.4, debug@~4.3.1:
   version "4.3.4"
   resolved "https://registry.npmjs.org/debug/-/debug-4.3.4.tgz"
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
@@ -2985,11 +2990,6 @@ ee-first@1.1.1:
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz"
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
-ejs@~0.8.3:
-  version "0.8.8"
-  resolved "https://registry.npmjs.org/ejs/-/ejs-0.8.8.tgz"
-  integrity sha512-2E5HBH8LoaSQ2OLW2LmEE1/9dL3YZCKqrQXBEeCv9P/dQlZOfdAYvJFHhNZ35uY6AXba+RllQTRtmJmXXm7i7g==
-
 electron-to-chromium@^1.2.7:
   version "1.4.427"
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.427.tgz"
@@ -3240,12 +3240,13 @@ es-to-primitive@^1.2.1:
     is-symbol "^1.0.2"
 
 es5-ext@^0.10.35, es5-ext@^0.10.46, es5-ext@^0.10.50, es5-ext@^0.10.62, es5-ext@~0.10.14:
-  version "0.10.62"
-  resolved "https://registry.npmjs.org/es5-ext/-/es5-ext-0.10.62.tgz"
-  integrity sha512-BHLqn0klhEpnOKSrzn/Xsz2UIW8j+cGmo9JLzr8BiUapV8hPL9+FliFqjwr9ngW7jWdnxv6eO+/LqyhJVqgrjA==
+  version "0.10.64"
+  resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.64.tgz#12e4ffb48f1ba2ea777f1fcdd1918ef73ea21714"
+  integrity sha512-p2snDhiLaXe6dahss1LddxqEm+SkuDvV8dnIQG0MWjyHpcMNfXKPE+/Cc0y+PhxJX3A4xGNeFCj5oc0BUh6deg==
   dependencies:
     es6-iterator "^2.0.3"
     es6-symbol "^3.1.3"
+    esniff "^2.0.1"
     next-tick "^1.1.0"
 
 es6-iterator@^2.0.1, es6-iterator@^2.0.3, es6-iterator@~2.0.1, es6-iterator@~2.0.3:
@@ -3324,7 +3325,7 @@ escalade@^3.1.1:
   resolved "https://registry.npmjs.org/escalade/-/escalade-3.1.1.tgz"
   integrity sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==
 
-escape-html@~1.0.3:
+escape-html@^1.0.3, escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz"
   integrity sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==
@@ -3412,6 +3413,16 @@ eslint@^4.0.0, eslint@^4.19.1:
     strip-json-comments "~2.0.1"
     table "4.0.2"
     text-table "~0.2.0"
+
+esniff@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/esniff/-/esniff-2.0.1.tgz#a4d4b43a5c71c7ec51c51098c1d8a29081f9b308"
+  integrity sha512-kTUIGKQ/mDPFoJ0oVfcmyJn4iBDRptjNVIzwIFR7tqWXdVI9xfA2RMwY/gbSpJG3lkdWNEjLap/NqVHZiJsdfg==
+  dependencies:
+    d "^1.0.1"
+    es5-ext "^0.10.62"
+    event-emitter "^0.3.5"
+    type "^2.7.2"
 
 espree@^3.5.4:
   version "3.5.4"
@@ -6823,11 +6834,6 @@ lodash@~2.4.1:
   resolved "https://registry.npmjs.org/lodash/-/lodash-2.4.2.tgz"
   integrity sha512-Kak1hi6/hYHGVPmdyiZijoQyz5x2iGVzs6w9GYB/HiXEtylY7tIoYEROMjvM1d9nXJqPOrG2MNPMn01bJ+S0Rw==
 
-lodash@~3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/lodash/-/lodash-3.2.0.tgz"
-  integrity sha512-pg876Sz2B6iut18K5PlFGZUxagOP9LACajQ4nzQHPZ8JcU15tviPV6q/u/dEQMV64TzKu8yJM3NprFxqRb3oHA==
-
 log-symbols@^2.1.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/log-symbols/-/log-symbols-2.2.0.tgz"
@@ -7206,10 +7212,17 @@ minimatch@0.3:
     lru-cache "2"
     sigmund "~1.0.0"
 
-"minimatch@2 || 3", minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.1.1:
+"minimatch@2 || 3", minimatch@^3.0.2, minimatch@^3.1.1:
   version "3.1.2"
   resolved "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz"
   integrity sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==
+  dependencies:
+    brace-expansion "^1.1.7"
+
+minimatch@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-4.0.0.tgz#befe49964c07e98a5eb7c5191be997b2aaffacc8"
+  integrity sha512-nUXi6viDR8DREKfJTnzZLh1amprrt6Hepx/WUngirNdiNEDmfkW2DLfiTeXWcMkMY0bRkuQ8eyCSbG3W4D0Qcg==
   dependencies:
     brace-expansion "^1.1.7"
 
@@ -7460,11 +7473,6 @@ node-api-headers@^0.0.2:
   version "0.0.2"
   resolved "https://registry.npmjs.org/node-api-headers/-/node-api-headers-0.0.2.tgz"
   integrity sha512-YsjmaKGPDkmhoNKIpkChtCsPVaRE0a274IdERKnuc/E8K1UJdBZ4/mvI006OijlQZHCfpRNOH3dfHQs92se8gg==
-
-node-forge@0.2.24:
-  version "0.2.24"
-  resolved "https://registry.npmjs.org/node-forge/-/node-forge-0.2.24.tgz"
-  integrity sha512-1y4WL1S6NQxoWH/pwweve88fhXD0tbMfiakZileMHDJDbhXjPh5omL2B5EVDtjdGkBOrTxqRjE3y8tucCl7AfQ==
 
 node-forge@^0.10.0:
   version "0.10.0"
@@ -8151,20 +8159,20 @@ passport-oauth2@^1.1.2:
     uid2 "0.0.x"
     utils-merge "1.x.x"
 
-passport-saml@^0.15.0:
-  version "0.15.0"
-  resolved "https://registry.npmjs.org/passport-saml/-/passport-saml-0.15.0.tgz"
-  integrity sha512-YJzzCsphGBMMfnnRyRDlG0WXrADGlD+aueOYhIK5Q3y2dnU4yG31+X6E6m3kxhaoC+CY3f9y+eW2RM8SzcQJMA==
+passport-saml@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/passport-saml/-/passport-saml-3.2.4.tgz#e8e9523f954988a3a47d12e425d7fa0f20a74dc9"
+  integrity sha512-JSgkFXeaexLNQh1RrOvJAgjLnZzH/S3HbX/mWAk+i7aulnjqUe7WKnPl1NPnJWqP7Dqsv0I2Xm6KIFHkftk0HA==
   dependencies:
-    passport-strategy "*"
-    q "1.1.x"
-    xml-crypto "0.8.x"
-    xml-encryption "~0.7"
-    xml2js "0.4.x"
-    xmlbuilder "2.5.x"
-    xmldom "0.1.x"
+    "@xmldom/xmldom" "^0.7.6"
+    debug "^4.3.2"
+    passport-strategy "^1.0.0"
+    xml-crypto "^2.1.3"
+    xml-encryption "^2.0.0"
+    xml2js "^0.4.23"
+    xmlbuilder "^15.1.1"
 
-passport-strategy@*, passport-strategy@1.x.x:
+passport-strategy@1.x.x, passport-strategy@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/passport-strategy/-/passport-strategy-1.0.0.tgz"
   integrity sha512-CB97UUvDKJde2V0KDWWB3lyf6PC3FaZP7YxZ2G8OAtn9p4HI9j9JLP9qjOGZFvyl8uwNT8qM+hGnz/n16NI7oA==
@@ -9061,15 +9069,15 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.npmjs.org/punycode/-/punycode-2.3.0.tgz"
   integrity sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==
 
-q@1.1.x, q@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.npmjs.org/q/-/q-1.1.2.tgz"
-  integrity sha512-ROtylwux7Vkc4C07oKE/ReigUmb33kVoLtcR4SJ1QVqwaZkBEDL3vX4/kwFzIERQ5PfCl0XafbU8u2YUhyGgVA==
-
 q@1.4.1, q@^1.4.1:
   version "1.4.1"
   resolved "https://registry.npmjs.org/q/-/q-1.4.1.tgz"
   integrity sha512-/CdEdaw49VZVmyIDGUQKDDT53c7qBkO6g5CefWz91Ae+l4+cRtcDYwMTXh6me4O8TMldeGHG3N2Bl84V78Ywbg==
+
+q@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/q/-/q-1.1.2.tgz"
+  integrity sha512-ROtylwux7Vkc4C07oKE/ReigUmb33kVoLtcR4SJ1QVqwaZkBEDL3vX4/kwFzIERQ5PfCl0XafbU8u2YUhyGgVA==
 
 qjobs@^1.1.4:
   version "1.2.0"
@@ -9956,9 +9964,9 @@ semver@^6.3.0:
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
 semver@^7.3.5, semver@^7.3.7, semver@^7.3.8:
-  version "7.5.2"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.2.tgz#5b851e66d1be07c1cdaf37dfc856f543325a2beb"
-  integrity sha512-SoftuTROv/cRjCze/scjGyiDtcUyxw1rgYQSZY7XTmtR5hX+dm76iDbTH8TkLPHCQmlbQVSSbNZCPM2hb0knnQ==
+  version "7.5.3"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.3.tgz#161ce8c2c6b4b3bdca6caadc9fa3317a4c4fe88e"
+  integrity sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==
   dependencies:
     lru-cache "^6.0.0"
 
@@ -12178,24 +12186,22 @@ ws@~7.4.2:
   resolved "https://registry.npmjs.org/ws/-/ws-7.4.6.tgz"
   integrity sha512-YmhHDO4MzaDLB+M9ym/mDA5z0naX8j7SIlT8f8z+I0VtzsRbekxEutHSme7NPS2qE8StCYQNUnfWdXta/Yu85A==
 
-xml-crypto@0.8.x:
-  version "0.8.5"
-  resolved "https://registry.npmjs.org/xml-crypto/-/xml-crypto-0.8.5.tgz"
-  integrity sha512-bmO0+G7iSf8dldIehyokvLps0ZZpGMe3gQNa+MPOrdBZbpzUG/Ass4njwWmPKCtR4pN+N921uH4M+Uskc7g/IA==
+xml-crypto@^2.1.3:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/xml-crypto/-/xml-crypto-2.1.5.tgz#e201ee51dca18dd9ae158ac101b6e995c983dca8"
+  integrity sha512-xOSJmGFm+BTXmaPYk8pPV3duKo6hJuZ5niN4uMzoNcTlwYs0jAu/N3qY+ud9MhE4N7eMRuC1ayC7Yhmb7MmAWg==
   dependencies:
-    xmldom "=0.1.19"
-    xpath.js ">=0.0.3"
+    "@xmldom/xmldom" "^0.7.9"
+    xpath "0.0.32"
 
-xml-encryption@~0.7:
-  version "0.7.4"
-  resolved "https://registry.npmjs.org/xml-encryption/-/xml-encryption-0.7.4.tgz"
-  integrity sha512-gwwKa9TwNT8S4dimixE+k4wsOOxK6Rt7ctxGRtuZyT7bWPvJwMTbYLLDKu7WG19vKwDMqMqGkVjbLQquKDY7pw==
+xml-encryption@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/xml-encryption/-/xml-encryption-2.0.0.tgz#d4e1eb3ec1f2c5d2a2a0a6e23d199237e8b4bf83"
+  integrity sha512-4Av83DdvAgUQQMfi/w8G01aJshbEZP9ewjmZMpS9t3H+OCZBDvyK4GJPnHGfWiXlArnPbYvR58JB9qF2x9Ds+Q==
   dependencies:
-    async "~0.2.7"
-    ejs "~0.8.3"
-    node-forge "0.2.24"
-    xmldom "~0.1.15"
-    xpath "0.0.5"
+    "@xmldom/xmldom" "^0.7.0"
+    escape-html "^1.0.3"
+    xpath "0.0.32"
 
 xml2js@0.4.4:
   version "0.4.4"
@@ -12205,14 +12211,6 @@ xml2js@0.4.4:
     sax "0.6.x"
     xmlbuilder ">=1.0.0"
 
-xml2js@0.4.x, xml2js@^0.4.17:
-  version "0.4.23"
-  resolved "https://registry.npmjs.org/xml2js/-/xml2js-0.4.23.tgz"
-  integrity sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==
-  dependencies:
-    sax ">=0.6.0"
-    xmlbuilder "~11.0.0"
-
 xml2js@0.5.0:
   version "0.5.0"
   resolved "https://registry.npmjs.org/xml2js/-/xml2js-0.5.0.tgz"
@@ -12221,17 +12219,23 @@ xml2js@0.5.0:
     sax ">=0.6.0"
     xmlbuilder "~11.0.0"
 
-xmlbuilder@12.0.0, xmlbuilder@>=1.0.0:
+xml2js@^0.4.17, xml2js@^0.4.23:
+  version "0.4.23"
+  resolved "https://registry.npmjs.org/xml2js/-/xml2js-0.4.23.tgz"
+  integrity sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==
+  dependencies:
+    sax ">=0.6.0"
+    xmlbuilder "~11.0.0"
+
+xmlbuilder@12.0.0:
   version "12.0.0"
   resolved "https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-12.0.0.tgz"
   integrity sha512-lMo8DJ8u6JRWp0/Y4XLa/atVDr75H9litKlb2E5j3V3MesoL50EBgZDWoLT3F/LztVnG67GjPXLZpqcky/UMnQ==
 
-xmlbuilder@2.5.x:
-  version "2.5.2"
-  resolved "https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-2.5.2.tgz"
-  integrity sha512-KjolMh3rfQaytYw7jMYzYUbfdcW3bV3Jm4QEws72e7fo/MuEMLImppWh4Zn2QqNhEKbKW8yOwfDlVO3+lUEspA==
-  dependencies:
-    lodash "~3.2.0"
+xmlbuilder@>=1.0.0, xmlbuilder@^15.1.1:
+  version "15.1.1"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-15.1.1.tgz#9dcdce49eea66d8d10b42cae94a79c3c8d0c2ec5"
+  integrity sha512-yMqGBqtXyeN1e3TGYvgNgDVZ3j84W4cwkOXQswghol6APgZWaff9lnbvN7MHYJOiXsvGPXtjTYJEiC9J2wv9Eg==
 
 xmlbuilder@~11.0.0:
   version "11.0.1"
@@ -12244,16 +12248,6 @@ xmldoc@^0.5.1:
   integrity sha512-RT40I5jVmRRle710br/W2XwIBg3Ev2y1FMQ5tKA4ueBuxTL1+hCOvRMpHeNshzmT0mTmR0TROP70srD/x9EWnQ==
   dependencies:
     sax "~1.1.1"
-
-xmldom@0.1.x, xmldom@~0.1.15:
-  version "0.1.31"
-  resolved "https://registry.npmjs.org/xmldom/-/xmldom-0.1.31.tgz"
-  integrity sha512-yS2uJflVQs6n+CyjHoaBmVSqIDevTAWrzMmjG1Gc7h1qQ7uVozNhEPJAwZXWyGQ/Gafo3fCwrcaokezLPupVyQ==
-
-xmldom@=0.1.19:
-  version "0.1.19"
-  resolved "https://registry.npmjs.org/xmldom/-/xmldom-0.1.19.tgz"
-  integrity sha512-pDyxjQSFQgNHkU+yjvoF+GXVGJU7e9EnOg/KcGMDihBIKjTsOeDYaECwC/O9bsUWKY+Sd9izfE43JXC46EOHKA==
 
 xmlhttprequest-ssl@1.5.1:
   version "1.5.1"
@@ -12270,15 +12264,10 @@ xmlhttprequest-ssl@~1.6.2:
   resolved "https://registry.npmjs.org/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.6.3.tgz"
   integrity sha512-3XfeQE/wNkvrIktn2Kf0869fC0BN6UpydVasGIeSm2B1Llihf7/0UfZM+eCkOw3P7bP4+qPgqhm7ZoxuJtFU0Q==
 
-xpath.js@>=0.0.3:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/xpath.js/-/xpath.js-1.1.0.tgz"
-  integrity sha512-jg+qkfS4K8E7965sqaUl8mRngXiKb3WZGfONgE18pr03FUQiuSV6G+Ej4tS55B+rIQSFEIw3phdVAQ4pPqNWfQ==
-
-xpath@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/xpath/-/xpath-0.0.5.tgz"
-  integrity sha512-Y1Oyy8lyIDwWpmKIWBF0RZrQOP1fzE12G0ekSB1yzKPtbAdCI5sBCqBU/CAZUkKk81OXuq9tul/5lyNS+22iKg==
+xpath@0.0.32:
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/xpath/-/xpath-0.0.32.tgz#1b73d3351af736e17ec078d6da4b8175405c48af"
+  integrity sha512-rxMJhSIoiO8vXcWvSifKqhvV96GjiD5wYb8/QHdoRyQvraTpp4IEv944nhGausZZ3u7dhQXteZuZbaqfpB7uYw==
 
 xregexp@2.0.0:
   version "2.0.0"
